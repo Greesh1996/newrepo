@@ -9,11 +9,12 @@ liveboard:
       - id: UNIQUE-greeshma.us-UI-WS
         name: UNIQUE-greeshma.us-UI-WS
         fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
-      search_query: "[Lo Custkey] [test] [Lo Extendedprice]"
+      search_query: "[Lo Custkey] [test] [Lo Extendedprice] [Lo Supplycost]"
       answer_columns:
       - name: Total Lo Custkey
       - name: Total test
       - name: Total Lo Extendedprice
+      - name: Total Lo Supplycost
       table:
         table_columns:
         - column_id: Total Lo Custkey
@@ -22,10 +23,13 @@ liveboard:
           headline_aggregation: SUM
         - column_id: Total Lo Extendedprice
           headline_aggregation: SUM
+        - column_id: Total Lo Supplycost
+          headline_aggregation: SUM
         ordered_column_ids:
         - Total Lo Custkey
         - Total test
         - Total Lo Extendedprice
+        - Total Lo Supplycost
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Total test\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}]}"
       chart:
@@ -34,11 +38,12 @@ liveboard:
         - column_id: Total Lo Custkey
         - column_id: Total test
         - column_id: Total Lo Extendedprice
+        - column_id: Total Lo Supplycost
         axis_configs:
         - "y":
           - Total Lo Custkey
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Total test\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7beb1c82-0980-449b-89f4-4edb1aa477d7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": false}},{\"id\": \"f9f1115a-330c-4b2f-a81e-e5d8b1be4903\",\"properties\": {\"axisType\": \"X\"}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Total test\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Supplycost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7beb1c82-0980-449b-89f4-4edb1aa477d7\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": false}},{\"id\": \"f9f1115a-330c-4b2f-a81e-e5d8b1be4903\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: c8c55c54-a7ea-4a55-be24-efd4d08531c4
   layout:
