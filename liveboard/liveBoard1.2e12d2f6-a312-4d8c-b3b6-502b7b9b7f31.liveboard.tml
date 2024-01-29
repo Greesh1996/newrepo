@@ -34,3 +34,40 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 16f40f12-fa79-4180-b525-85ad6e202582
+  - id: Viz_2
+    answer:
+      name: Total Lo Extendedprice
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Extendedprice] [Lo Quantity] [Lo Revenue]"
+      answer_columns:
+      - name: Total Lo Extendedprice
+      - name: Total Lo Quantity
+      - name: Total Lo Revenue
+      table:
+        table_columns:
+        - column_id: Total Lo Extendedprice
+          headline_aggregation: SUM
+        - column_id: Total Lo Quantity
+          headline_aggregation: SUM
+        - column_id: Total Lo Revenue
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Extendedprice
+        - Total Lo Quantity
+        - Total Lo Revenue
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Extendedprice
+        - column_id: Total Lo Quantity
+        - column_id: Total Lo Revenue
+        axis_configs:
+        - "y":
+          - Total Lo Extendedprice
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 81473801-ea7b-455a-9ded-1abe2179cde5
