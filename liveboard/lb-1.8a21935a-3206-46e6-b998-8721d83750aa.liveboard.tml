@@ -9,33 +9,30 @@ liveboard:
       - id: UNIQUE-greeshma.us-UI-WS
         name: UNIQUE-greeshma.us-UI-WS
         fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
-      search_query: "[Lo Custkey] [test] [Lo Extendedprice]"
+      search_query: "[Lo Custkey] [Lo Extendedprice]"
       answer_columns:
       - name: Total Lo Custkey
-      - name: Total test
       - name: Total Lo Extendedprice
       table:
         table_columns:
         - column_id: Total Lo Custkey
           headline_aggregation: SUM
-        - column_id: Total test
-          headline_aggregation: SUM
         - column_id: Total Lo Extendedprice
           headline_aggregation: SUM
         ordered_column_ids:
         - Total Lo Custkey
-        - Total test
         - Total Lo Extendedprice
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
         - column_id: Total Lo Custkey
-        - column_id: Total test
         - column_id: Total Lo Extendedprice
         axis_configs:
         - "y":
           - Total Lo Custkey
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"17e7be9d-cc76-4f43-bd93-78b8cddd0c0a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": false}},{\"id\": \"49679548-b540-408b-a1e3-06d0eba451bf\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: c8c55c54-a7ea-4a55-be24-efd4d08531c4
