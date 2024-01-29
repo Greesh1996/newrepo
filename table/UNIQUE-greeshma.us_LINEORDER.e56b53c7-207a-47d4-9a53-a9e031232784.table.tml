@@ -136,10 +136,3 @@ table:
       column_type: ATTRIBUTE
     db_column_properties:
       data_type: VARCHAR
-  joins_with:
-  - name: LINEORDER_CUSTOMER
-    destination:
-      name: UNIQUE-greeshma.us_CUSTOMER
-      fqn: 1b3b6388-0d25-4661-b1f5-afc36d93d1d2
-    "on": "[UNIQUE-greeshma.us_LINEORDER::LO_CUSTKEY] = [UNIQUE-greeshma.us_CUSTOMER::C_CUSTKEY]"
-    type: INNER
