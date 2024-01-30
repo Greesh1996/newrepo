@@ -156,8 +156,10 @@ liveboard:
     - Lo Orderdate
     is_mandatory: false
     date_filter:
-      type: YESTERDAY
+      type: NEXT_N_PERIOD
+      number: 1
       oper: =
+      date_period: MINUTE
     display_name: ""
   layout:
     tiles:
