@@ -181,3 +181,18 @@ liveboard:
       "y": 10
       height: 2
       width: 3
+  views:
+  - view_guid: 0c8f95f4-bde1-4b9f-9cce-c69eda917000
+    name: newView
+    view_filters:
+    - column:
+      - Lo Commitdate
+      date_filter:
+        type: TODAY
+        oper: =
+    - column:
+      - Lo Orderdate
+      date_filter:
+        type: YESTERDAY
+        oper: =
+    is_public: false
