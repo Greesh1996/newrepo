@@ -22,7 +22,7 @@ worksheet:
       column_type: MEASURE
       aggregation: SUM
       index_type: DONT_INDEX
-  - name: Lo Custkey
+  - name: Lo Custkey13
     column_id: UNIQUE-greeshma.us_LINEORDER_1::LO_CUSTKEY
     properties:
       column_type: MEASURE

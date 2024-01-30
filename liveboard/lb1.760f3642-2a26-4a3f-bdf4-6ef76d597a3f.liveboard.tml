@@ -1,0 +1,79 @@
+guid: 760f3642-2a26-4a3f-bdf4-6ef76d597a3f
+liveboard:
+  name: lb1
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Lo Custkey
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Custkey13] [Lo Extendedprice]"
+      answer_columns:
+      - name: Total Lo Custkey13
+      - name: Total Lo Extendedprice
+      table:
+        table_columns:
+        - column_id: Total Lo Custkey13
+          headline_aggregation: SUM
+        - column_id: Total Lo Extendedprice
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Custkey13
+        - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Lo Custkey13\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Custkey13
+        - column_id: Total Lo Extendedprice
+        axis_configs:
+        - "y":
+          - Total Lo Custkey13
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Custkey13\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d0e6ceee-d5e4-4487-a8c4-c1b844ce55f1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey13\"],\"isOpposite\": false}},{\"id\": \"8dd2bec9-eab8-493c-9c6d-a2079faa071a\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: c5ccc8ba-86f9-4ba8-8c6a-b30ea92d1a22
+  - id: Viz_2
+    answer:
+      name: Total Lo Quantity
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Quantity] [Lo Revenue] [Lo Partkey]"
+      answer_columns:
+      - name: Total Lo Quantity
+      - name: Total Lo Revenue
+      - name: Total Lo Partkey
+      table:
+        table_columns:
+        - column_id: Total Lo Quantity
+          headline_aggregation: SUM
+        - column_id: Total Lo Revenue
+          headline_aggregation: SUM
+        - column_id: Total Lo Partkey
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Quantity
+        - Total Lo Revenue
+        - Total Lo Partkey
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Quantity
+        - column_id: Total Lo Revenue
+        - column_id: Total Lo Partkey
+        axis_configs:
+        - "y":
+          - Total Lo Quantity
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: bca37a1d-a811-4f57-869d-96e588b1495a
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: EXTRA_SMALL
