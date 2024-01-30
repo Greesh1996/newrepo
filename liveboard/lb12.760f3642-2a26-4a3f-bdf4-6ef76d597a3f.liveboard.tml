@@ -1,6 +1,6 @@
 guid: 760f3642-2a26-4a3f-bdf4-6ef76d597a3f
 liveboard:
-  name: lb1
+  name: lb12
   visualizations:
   - id: Viz_1
     answer:
@@ -147,4 +147,10 @@ liveboard:
   layout:
     tiles:
     - visualization_id: Viz_1
+      size: EXTRA_SMALL
+    - visualization_id: Viz_2
+      size: EXTRA_SMALL
+    - visualization_id: Viz_3
+      size: LARGE
+    - visualization_id: Viz_4
       size: EXTRA_SMALL
