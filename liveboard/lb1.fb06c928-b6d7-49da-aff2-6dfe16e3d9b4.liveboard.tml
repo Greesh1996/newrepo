@@ -1,0 +1,118 @@
+guid: fb06c928-b6d7-49da-aff2-6dfe16e3d9b4
+liveboard:
+  name: lb1
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Lo Quantity
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Quantity]"
+      answer_columns:
+      - name: Total Lo Quantity
+      table:
+        table_columns:
+        - column_id: Total Lo Quantity
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Quantity
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Quantity
+        axis_configs:
+        - "y":
+          - Total Lo Quantity
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 40ea4558-5f9d-4dc7-bf7f-09cb30b8c7ff
+  - id: Viz_2
+    answer:
+      name: Total Lo Partkey
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Partkey] [Lo Orderkey]"
+      answer_columns:
+      - name: Total Lo Partkey
+      - name: Total Lo Orderkey
+      table:
+        table_columns:
+        - column_id: Total Lo Partkey
+          headline_aggregation: SUM
+        - column_id: Total Lo Orderkey
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Partkey
+        - Total Lo Orderkey
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Partkey
+        - column_id: Total Lo Orderkey
+        axis_configs:
+        - "y":
+          - Total Lo Partkey
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 855b9700-1dd0-4050-91d7-eabcd5a337d7
+  filters:
+  - column:
+    - Lo Commitdate
+    is_mandatory: false
+    date_filter:
+      type: YESTERDAY
+      oper: =
+    display_name: ""
+  - column:
+    - Lo Orderdate
+    is_mandatory: false
+    date_filter:
+      type: TOMORROW
+      oper: =
+    display_name: ""
+  - column:
+    - Lo Shippriority
+    oper: in
+    values:
+    - "{null}"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 2
+      width: 3
+    - visualization_id: Viz_2
+      x: 3
+      "y": 0
+      height: 2
+      width: 3
+  views:
+  - view_guid: 35764f2d-13df-4dc8-82cd-c1762a5d1e4b
+    name: v1
+    view_filters:
+    - column:
+      - Lo Commitdate
+      date_filter:
+        type: YESTERDAY
+        oper: =
+    - column:
+      - Lo Orderdate
+      date_filter:
+        type: TOMORROW
+        oper: =
+    - column:
+      - Lo Shippriority
+      oper: in
+      values:
+      - "{null}"
+    is_public: false
