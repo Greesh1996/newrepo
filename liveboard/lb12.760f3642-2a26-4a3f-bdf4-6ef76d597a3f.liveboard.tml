@@ -184,6 +184,25 @@ liveboard:
       height: 2
       width: 3
   views:
+  - view_guid: c704776f-4566-4b74-ba44-c1bf5904c2a2
+    name: view1
+    view_filters:
+    - column:
+      - Lo Commitdate
+      date_filter:
+        type: EXACT_DATE_RANGE
+        oper: between
+        date_range:
+          start_date: 01/29/2024
+          end_date: 01/30/2024
+    - column:
+      - Lo Orderdate
+      date_filter:
+        type: NEXT_N_PERIOD
+        number: 1
+        oper: =
+        date_period: MINUTE
+    is_public: false
   - view_guid: 0c8f95f4-bde1-4b9f-9cce-c69eda917000
     name: newView
     view_filters:
