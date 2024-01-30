@@ -107,6 +107,43 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: 98a79d17-efb4-4bfc-bf45-3450f90de6fb
+  - id: Viz_4
+    answer:
+      name: Total Lo Supplycost
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Supplycost] [Lo Suppkey] [Lo Revenue]"
+      answer_columns:
+      - name: Total Lo Supplycost
+      - name: Total Lo Suppkey
+      - name: Total Lo Revenue
+      table:
+        table_columns:
+        - column_id: Total Lo Supplycost
+          headline_aggregation: SUM
+        - column_id: Total Lo Suppkey
+          headline_aggregation: SUM
+        - column_id: Total Lo Revenue
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Supplycost
+        - Total Lo Suppkey
+        - Total Lo Revenue
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Supplycost
+        - column_id: Total Lo Suppkey
+        - column_id: Total Lo Revenue
+        axis_configs:
+        - "y":
+          - Total Lo Supplycost
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 8cf91704-b75f-4700-a85e-f38b0250f0b0
   layout:
     tiles:
     - visualization_id: Viz_1
