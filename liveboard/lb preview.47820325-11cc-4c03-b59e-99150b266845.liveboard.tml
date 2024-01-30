@@ -1,3 +1,36 @@
 guid: 47820325-11cc-4c03-b59e-99150b266845
 liveboard:
   name: lb preview
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Lo Orderkey
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Orderkey] [Lo Partkey]"
+      answer_columns:
+      - name: Total Lo Orderkey
+      - name: Total Lo Partkey
+      table:
+        table_columns:
+        - column_id: Total Lo Orderkey
+          headline_aggregation: SUM
+        - column_id: Total Lo Partkey
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Orderkey
+        - Total Lo Partkey
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Orderkey
+        - column_id: Total Lo Partkey
+        axis_configs:
+        - "y":
+          - Total Lo Orderkey
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 2610f232-0391-4215-8f87-e47300dfacf8
