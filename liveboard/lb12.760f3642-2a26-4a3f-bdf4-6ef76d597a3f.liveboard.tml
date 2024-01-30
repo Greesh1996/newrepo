@@ -149,6 +149,13 @@ liveboard:
     - Lo Commitdate
     is_mandatory: false
     date_filter:
+      type: TODAY
+      oper: =
+    display_name: ""
+  - column:
+    - Lo Orderdate
+    is_mandatory: false
+    date_filter:
       type: YESTERDAY
       oper: =
     display_name: ""
