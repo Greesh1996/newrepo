@@ -144,13 +144,33 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 8cf91704-b75f-4700-a85e-f38b0250f0b0
+  filters:
+  - column:
+    - Lo Commitdate
+    is_mandatory: false
+    date_filter:
+      type: YESTERDAY
+      oper: =
+    display_name: ""
   layout:
     tiles:
     - visualization_id: Viz_1
-      size: EXTRA_SMALL
+      x: 0
+      "y": 0
+      height: 2
+      width: 3
     - visualization_id: Viz_2
-      size: EXTRA_SMALL
+      x: 3
+      "y": 0
+      height: 2
+      width: 3
     - visualization_id: Viz_3
-      size: LARGE
+      x: 0
+      "y": 2
+      height: 8
+      width: 12
     - visualization_id: Viz_4
-      size: EXTRA_SMALL
+      x: 0
+      "y": 10
+      height: 2
+      width: 3
