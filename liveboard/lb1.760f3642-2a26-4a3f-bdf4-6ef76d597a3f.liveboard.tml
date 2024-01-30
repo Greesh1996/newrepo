@@ -73,6 +73,40 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: bca37a1d-a811-4f57-869d-96e588b1495a
+  - id: Viz_3
+    answer:
+      name: "Lo Shippriority, Quarterly Lo Commitdate"
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Shippriority] [Lo Commitdate] [Lo Commitdate].quarterly"
+      answer_columns:
+      - name: Lo Shippriority
+      - name: Quarter(Lo Commitdate)
+      table:
+        table_columns:
+        - column_id: Lo Shippriority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Quarter(Lo Commitdate)
+          headline_aggregation: MIN-MAX
+        ordered_column_ids:
+        - Lo Shippriority
+        - Quarter(Lo Commitdate)
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Lo Shippriority
+        - column_id: Quarter(Lo Commitdate)
+        axis_configs:
+        - x:
+          - Quarter(Lo Commitdate)
+          "y":
+          - Lo Shippriority
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: 98a79d17-efb4-4bfc-bf45-3450f90de6fb
   layout:
     tiles:
     - visualization_id: Viz_1
