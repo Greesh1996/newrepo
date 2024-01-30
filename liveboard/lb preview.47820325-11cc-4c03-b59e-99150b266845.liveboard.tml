@@ -88,3 +88,13 @@ liveboard:
       "y": 2
       height: 8
       width: 12
+  views:
+  - view_guid: 9e9edccf-752d-41de-ae4a-8e99c590dbca
+    name: view1
+    view_filters:
+    - column:
+      - Lo Commitdate
+      date_filter:
+        type: TODAY
+        oper: =
+    is_public: false
