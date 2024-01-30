@@ -34,3 +34,39 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: c5ccc8ba-86f9-4ba8-8c6a-b30ea92d1a22
+  - id: Viz_2
+    answer:
+      name: Total Lo Tax by Lo Orderpriority
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Orderpriority] [Lo Tax]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Total Lo Tax
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Lo Tax
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Lo Orderpriority
+        - Total Lo Tax
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Total Lo Tax
+        axis_configs:
+        - x:
+          - Lo Orderpriority
+          "y":
+          - Total Lo Tax
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9142dab7-e7f2-4a1f-bf2c-c199059db489\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Tax\"],\"isOpposite\": false}},{\"id\": \"bec7b28a-89a4-498c-bfc9-8c75d828d6aa\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Orderpriority\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Tax\",\"color\": \"#8C62F5\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: cec79523-44ea-4bb3-896a-36c171b197ec
