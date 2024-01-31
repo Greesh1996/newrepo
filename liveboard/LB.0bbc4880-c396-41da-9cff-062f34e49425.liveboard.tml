@@ -98,6 +98,33 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 94ff6fd3-e120-4366-8046-4f367da65354
+  - id: Viz_4
+    answer:
+      name: Total Lo Extendedprice
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Extendedprice]"
+      answer_columns:
+      - name: Total Lo Extendedprice
+      table:
+        table_columns:
+        - column_id: Total Lo Extendedprice
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Extendedprice
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Extendedprice
+        axis_configs:
+        - "y":
+          - Total Lo Extendedprice
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: b8d30323-49f3-4be6-864a-2c20172c839a
   layout:
     tabs:
     - name: Tab 1
@@ -118,5 +145,6 @@ liveboard:
         "y": 0
         height: 2
         width: 3
+      - visualization_id: Viz_4
     - name: Tab 2
       description: ""
