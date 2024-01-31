@@ -96,6 +96,7 @@ liveboard:
     values:
     - air
     - fob
+    - mail
     is_mandatory: false
     is_single_value: false
     display_name: ""
