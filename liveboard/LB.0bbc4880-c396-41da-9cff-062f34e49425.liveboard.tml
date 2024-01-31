@@ -34,3 +34,35 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 3972f423-d3cb-47d5-8fb2-e0509f9653cd
+  - id: Viz_2
+    answer:
+      name: Total Lo Revenue
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Revenue] [Lo Suppkey]"
+      answer_columns:
+      - name: Total Lo Revenue
+      - name: Total Lo Suppkey
+      table:
+        table_columns:
+        - column_id: Total Lo Revenue
+          headline_aggregation: SUM
+        - column_id: Total Lo Suppkey
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Revenue
+        - Total Lo Suppkey
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Revenue
+        - column_id: Total Lo Suppkey
+        axis_configs:
+        - "y":
+          - Total Lo Revenue
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 505a1f90-84aa-4182-9eeb-4cd8c3ec5629
