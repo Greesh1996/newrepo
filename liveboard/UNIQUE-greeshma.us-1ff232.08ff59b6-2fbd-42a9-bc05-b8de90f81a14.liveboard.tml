@@ -77,6 +77,33 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 568a7048-d9b7-4d89-a08b-b0a020ac4b32
+  - id: Viz_3
+    answer:
+      name: Total test
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[test] [Lo Commitdate].'last day'"
+      answer_columns:
+      - name: Total test
+      table:
+        table_columns:
+        - column_id: Total test
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total test
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total test
+        axis_configs:
+        - "y":
+          - Total test
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: bbcfbf8b-1e17-40da-8839-b466bd7304d8
   layout:
     tabs:
     - name: Tab 1
@@ -94,3 +121,5 @@ liveboard:
         width: 3
     - name: Tab 2
       description: ""
+      tiles:
+      - visualization_id: Viz_3
