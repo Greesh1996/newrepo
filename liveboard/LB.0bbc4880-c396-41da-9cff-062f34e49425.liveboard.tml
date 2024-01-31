@@ -114,3 +114,9 @@ liveboard:
         height: 2
         width: 3
       - visualization_id: Viz_3
+        x: 6
+        "y": 0
+        height: 2
+        width: 3
+    - name: Tab 2
+      description: ""
