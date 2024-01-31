@@ -125,38 +125,6 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: b8d30323-49f3-4be6-864a-2c20172c839a
-  - id: Viz_5
-    answer:
-      name: Total Lo Partkey
-      tables:
-      - id: UNIQUE-greeshma.us-UI-WS
-        name: UNIQUE-greeshma.us-UI-WS
-        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
-      search_query: "[Lo Partkey] [Lo Quantity]"
-      answer_columns:
-      - name: Total Lo Partkey
-      - name: Total Lo Quantity
-      table:
-        table_columns:
-        - column_id: Total Lo Partkey
-          headline_aggregation: SUM
-        - column_id: Total Lo Quantity
-          headline_aggregation: SUM
-        ordered_column_ids:
-        - Total Lo Partkey
-        - Total Lo Quantity
-        client_state: ""
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Total Lo Partkey
-        - column_id: Total Lo Quantity
-        axis_configs:
-        - "y":
-          - Total Lo Partkey
-        client_state: ""
-      display_mode: CHART_MODE
-    viz_guid: 69b4d839-9969-43ab-a4af-6ec3753c627d
   layout:
     tabs:
     - name: Tab 1
@@ -178,7 +146,9 @@ liveboard:
         height: 2
         width: 3
       - visualization_id: Viz_4
+        x: 9
+        "y": 0
+        height: 2
+        width: 3
     - name: Tab 2
       description: ""
-      tiles:
-      - visualization_id: Viz_5
