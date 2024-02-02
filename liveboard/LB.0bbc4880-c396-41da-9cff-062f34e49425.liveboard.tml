@@ -23,6 +23,7 @@ liveboard:
         - Total Lo Extendedprice
         - Total Lo Linenumber
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Linenumber\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -32,6 +33,7 @@ liveboard:
         - "y":
           - Total Lo Extendedprice
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Linenumber\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b2e03c6e-d88d-410d-9228-9bb7e3d7c9e8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": false}},{\"id\": \"6d4a54c6-972f-46cc-9eb9-e2ab789cd03a\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 3972f423-d3cb-47d5-8fb2-e0509f9653cd
   - id: Viz_2
@@ -55,6 +57,7 @@ liveboard:
         - Total Lo Revenue
         - Total Lo Suppkey
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Suppkey\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -64,6 +67,7 @@ liveboard:
         - "y":
           - Total Lo Revenue
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Suppkey\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"3571d80b-51d1-4640-9a40-c0b1699f75e2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Revenue\"],\"isOpposite\": false}},{\"id\": \"8f5fde73-eff9-4cb4-b428-af9a196f362c\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 505a1f90-84aa-4182-9eeb-4cd8c3ec5629
   - id: Viz_3
@@ -87,6 +91,7 @@ liveboard:
         - Total Lo Revenue
         - Total Lo Suppkey
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Suppkey\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -96,6 +101,7 @@ liveboard:
         - "y":
           - Total Lo Revenue
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Suppkey\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ea99f5b6-c8d3-4256-8b39-4f03777a0833\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Revenue\"],\"isOpposite\": false}},{\"id\": \"e3c46b55-1a83-4d49-acc9-1484c7a1896a\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 94ff6fd3-e120-4366-8046-4f367da65354
   - id: Viz_4
@@ -115,6 +121,7 @@ liveboard:
         ordered_column_ids:
         - Total Lo Extendedprice
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -123,8 +130,43 @@ liveboard:
         - "y":
           - Total Lo Extendedprice
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bb8ca9e2-2c43-4164-9050-d1fe479d9f98\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": false}},{\"id\": \"a82d271d-675c-49f4-b908-711a2047f193\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: b8d30323-49f3-4be6-864a-2c20172c839a
+  - id: Viz_5
+    answer:
+      name: Total Lo Partkey
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: eefff6c4-b655-402d-8ee7-8003cf61a19d
+      search_query: "[Lo Partkey] [Lo Quantity]"
+      answer_columns:
+      - name: Total Lo Partkey
+      - name: Total Lo Quantity
+      table:
+        table_columns:
+        - column_id: Total Lo Partkey
+          headline_aggregation: SUM
+        - column_id: Total Lo Quantity
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Partkey
+        - Total Lo Quantity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Lo Partkey\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Quantity\",\"columnProperty\": {}}]}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Partkey
+        - column_id: Total Lo Quantity
+        axis_configs:
+        - "y":
+          - Total Lo Partkey
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Lo Quantity\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Partkey\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7f46a6ae-a518-41b4-8cba-9dceb2e3405b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Partkey\"],\"isOpposite\": false}},{\"id\": \"2e6fbb8c-0304-46b5-b77d-ea69d364f8ef\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: CHART_MODE
+    viz_guid: 69b4d839-9969-43ab-a4af-6ec3753c627d
   layout:
     tabs:
     - name: Tab 1
@@ -152,3 +194,9 @@ liveboard:
         width: 3
     - name: Tab 2
       description: ""
+      tiles:
+      - visualization_id: Viz_5
+        x: 0
+        "y": 0
+        height: 2
+        width: 3
