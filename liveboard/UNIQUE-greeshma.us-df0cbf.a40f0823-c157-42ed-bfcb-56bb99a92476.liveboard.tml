@@ -1,0 +1,200 @@
+guid: a40f0823-c157-42ed-bfcb-56bb99a92476
+liveboard:
+  name: UNIQUE-greeshma.us-df0cbf
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Lo Revenue by Quarterly Lo Commitdate and Quarterly Lo Orderdate
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: 11fe5359-a7fe-4f4b-9474-b5df5bd5a0ea
+      search_query: "[Lo Revenue] [Lo Commitdate] [Lo Commitdate].quarterly [Lo Orderdate] [Lo Orderdate].quarterly"
+      answer_columns:
+      - name: Total Lo Revenue
+      - name: Quarter(Lo Commitdate)
+      - name: Quarter(Lo Orderdate)
+      table:
+        table_columns:
+        - column_id: Quarter(Lo Commitdate)
+          headline_aggregation: MIN-MAX
+        - column_id: Quarter(Lo Orderdate)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Lo Revenue
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Quarter(Lo Commitdate)
+        - Quarter(Lo Orderdate)
+        - Total Lo Revenue
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Quarter(Lo Commitdate)
+        - column_id: Quarter(Lo Orderdate)
+        - column_id: Total Lo Revenue
+        axis_configs:
+        - x:
+          - Quarter(Lo Commitdate)
+          "y":
+          - Total Lo Revenue
+          color:
+          - Quarter(Lo Orderdate)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Lo Commitdate)\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Lo Orderdate)\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"71739d85-0a3e-4e4d-95a4-c10b16feb6c1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Revenue\"],\"isOpposite\": false}},{\"id\": \"b476d99f-e406-4116-a45c-30d7b1dbc3ea\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Lo Commitdate)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"q1 1992\",\"color\": \"#2E75F0\"},{\"serieName\": \"q2 1992\",\"color\": \"#48D1E0\"},{\"serieName\": \"q3 1992\",\"color\": \"#FCC838\"},{\"serieName\": \"q4 1992\",\"color\": \"#06BF7F\"},{\"serieName\": \"q1 1993\",\"color\": \"#8C62F5\"},{\"serieName\": \"q2 1993\",\"color\": \"#FF8142\"},{\"serieName\": \"q3 1993\",\"color\": \"#ABC7F9\"},{\"serieName\": \"q4 1993\",\"color\": \"#B5ECF2\"},{\"serieName\": \"q1 1994\",\"color\": \"#FDE9AF\"},{\"serieName\": \"q2 1994\",\"color\": \"#9BE5CB\"},{\"serieName\": \"q3 1994\",\"color\": \"#D1C0FB\"},{\"serieName\": \"q4 1994\",\"color\": \"#FFCCB3\"},{\"serieName\": \"q1 1995\",\"color\": \"#2359B6\"},{\"serieName\": \"q2 1995\",\"color\": \"#369FAA\"},{\"serieName\": \"q3 1995\",\"color\": \"#BF982A\"},{\"serieName\": \"q4 1995\",\"color\": \"#049160\"},{\"serieName\": \"q1 1996\",\"color\": \"#6A4ABA\"},{\"serieName\": \"q2 1996\",\"color\": \"#C26232\"},{\"serieName\": \"q3 1996\",\"color\": \"#71A1F4\"},{\"serieName\": \"q4 1996\",\"color\": \"#82DFE9\"},{\"serieName\": \"q1 1997\",\"color\": \"#FCD977\"},{\"serieName\": \"q2 1997\",\"color\": \"#56D3A8\"},{\"serieName\": \"q3 1997\",\"color\": \"#B094F8\"},{\"serieName\": \"q4 1997\",\"color\": \"#FFA97E\"},{\"serieName\": \"q1 1998\",\"color\": \"#163772\"},{\"serieName\": \"q2 1998\",\"color\": \"#22636B\"},{\"serieName\": \"q3 1998\",\"color\": \"#785F1A\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 4f1235a8-feab-4500-9eae-a6846659e60e
+  - id: Viz_2
+    answer:
+      name: "Lo Orderpriority, Lo Shippriority"
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: 11fe5359-a7fe-4f4b-9474-b5df5bd5a0ea
+      search_query: "[Lo Orderpriority] [Lo Shippriority]"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Lo Shippriority
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lo Shippriority
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Lo Orderpriority
+        - Lo Shippriority
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Lo Shippriority
+        axis_configs:
+        - x:
+          - Lo Shippriority
+          "y":
+          - Lo Orderpriority
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: 5117597c-83a0-43f9-ad67-c94a2a36dd67
+  - id: Viz_3
+    answer:
+      name: "Lo Shippriority, Lo Shipmode"
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: 11fe5359-a7fe-4f4b-9474-b5df5bd5a0ea
+      search_query: "[Lo Shippriority] [Lo Shipmode]"
+      answer_columns:
+      - name: Lo Shippriority
+      - name: Lo Shipmode
+      table:
+        table_columns:
+        - column_id: Lo Shippriority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lo Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Lo Shippriority
+        - Lo Shipmode
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Lo Shippriority
+        - column_id: Lo Shipmode
+        axis_configs:
+        - x:
+          - Lo Shippriority
+          "y":
+          - Lo Shipmode
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: dfaa0ef9-b492-4cff-b94d-cd0dd17a3c0f
+  filters:
+  - column:
+    - Lo Shipmode
+    oper: in
+    values:
+    - air
+    - fob
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Lo Orderpriority
+    oper: in
+    values:
+    - 1-urgent
+    - 2-high
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 6
+    - visualization_id: Viz_2
+      x: 0
+      "y": 8
+      height: 8
+      width: 12
+    - visualization_id: Viz_3
+      x: 0
+      "y": 16
+      height: 8
+      width: 12
+  views:
+  - view_guid: e3fa3f8d-c64d-4297-9a08-e4a9625226de
+    name: UNIQUE-greeshma.us-5i79db
+    view_filters:
+    - column:
+      - Lo Shipmode
+      oper: in
+      values:
+      - fob
+    - column:
+      - Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+      - 2-high
+      - 3-medium
+    is_public: true
+  - view_guid: 447b8922-17a9-425c-b888-cb2fe45f3cb3
+    name: view2
+    view_filters:
+    - column:
+      - Lo Shipmode
+      oper: in
+      values:
+      - air
+      - fob
+      - rail
+    - column:
+      - Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+      - 2-high
+    is_public: false
+  - view_guid: 0c77cc6c-1152-4843-bb7a-4fff7e3e5410
+    name: UNIQUE-greeshma.us-5i79db
+    view_filters:
+    - column:
+      - Lo Shipmode
+      oper: in
+      values:
+      - fob
+    - column:
+      - Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+      - 2-high
+    is_public: false
