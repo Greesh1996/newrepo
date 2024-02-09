@@ -1,0 +1,134 @@
+guid: 89e83e75-8a6c-4a57-9578-d90660601f5e
+liveboard:
+  name: lb
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Discount
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Extended Price]"
+      answer_columns:
+      - name: Total Discount
+      - name: Total Extended Price
+      table:
+        table_columns:
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        - column_id: Total Extended Price
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Discount
+        - Total Extended Price
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Discount
+        - column_id: Total Extended Price
+        axis_configs:
+        - "y":
+          - Total Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 973db67d-edba-4c14-b720-274f3c383b4d
+  - id: Viz_2
+    answer:
+      name: Total Discount
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Quantity] [Org Masked Revenue]"
+      answer_columns:
+      - name: Total Discount
+      - name: Total Quantity
+      - name: Total Org Masked Revenue
+      table:
+        table_columns:
+        - column_id: Total Discount
+          headline_aggregation: SUM
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        - column_id: Total Org Masked Revenue
+          headline_aggregation: TABLE_AGGR
+        ordered_column_ids:
+        - Total Discount
+        - Total Quantity
+        - Total Org Masked Revenue
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Discount
+        - column_id: Total Quantity
+        - column_id: Total Org Masked Revenue
+        axis_configs:
+        - "y":
+          - Total Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 8c66e3b6-e730-4439-b911-f83ac9950df7
+  filters:
+  - column:
+    - Color
+    oper: in
+    values:
+    - almond
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Lineorder Suppkey
+    oper: in
+    values:
+    - "171"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 2
+      width: 3
+    - visualization_id: Viz_2
+      x: 3
+      "y": 0
+      height: 2
+      width: 3
+  views:
+  - view_guid: abba675b-2c0b-4860-9e7c-46edf116db67
+    name: v1
+    view_filters:
+    - column:
+      - Color
+      oper: in
+      values:
+      - almond
+      - chiffon
+    - column:
+      - Lineorder Suppkey
+      oper: in
+      values:
+      - "171"
+    is_public: false
+  - view_guid: 1a617582-3736-4df2-a966-26c30211711b
+    name: v2
+    view_filters:
+    - column:
+      - Color
+      oper: in
+      values:
+      - almond
+      - chiffon
+    - column:
+      - Lineorder Suppkey
+      oper: in
+      values:
+      - "171"
+      - "14"
+    is_public: false
