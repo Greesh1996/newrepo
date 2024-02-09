@@ -5,38 +5,31 @@ answer:
   - id: Parameters WS
     name: Parameters WS
     fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-  search_query: "[Extended Price] [Brand1] [Order Total Price]"
+  search_query: "[Extended Price] [Brand1]"
   answer_columns:
-  - name: Total Extended Price
   - name: Brand1
-  - name: Total Order Total Price
+  - name: Total Extended Price
   table:
     table_columns:
     - column_id: Brand1
       headline_aggregation: COUNT_DISTINCT
     - column_id: Total Extended Price
       headline_aggregation: SUM
-    - column_id: Total Order Total Price
-      headline_aggregation: SUM
     ordered_column_ids:
     - Brand1
     - Total Extended Price
-    - Total Order Total Price
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
-    type: SCATTER
+    type: COLUMN
     chart_columns:
     - column_id: Brand1
     - column_id: Total Extended Price
-    - column_id: Total Order Total Price
     axis_configs:
     - x:
-      - Total Extended Price
-      "y":
-      - Total Order Total Price
-      category:
       - Brand1
+      "y":
+      - Total Extended Price
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"bffee257-a121-45e4-a693-4db223475374\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Order Total Price\"],\"isOpposite\": false}},{\"id\": \"6bee062f-f983-460c-aee4-c30b19bba158\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Total Extended Price\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Order Total Price\",\"color\": \"#2E75F0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Brand1\",\"columnProperty\": {}},{\"columnId\": \"Total Extended Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"575cb474-15d3-46a5-9465-ac016917baa9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Extended Price\"],\"isOpposite\": false}},{\"id\": \"ec2cf7c1-b973-4082-9a93-e5443db8905a\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}]}"
   display_mode: CHART_MODE
