@@ -1,0 +1,40 @@
+guid: 6144ba1a-bfb6-4701-a9f6-53206a8c5fd7
+liveboard:
+  name: lb1
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Tax by Ship Mode
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[Tax] [Ship Mode]"
+      answer_columns:
+      - name: Total Tax
+      - name: Ship Mode
+      table:
+        table_columns:
+        - column_id: Ship Mode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Tax
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Ship Mode
+        - Total Tax
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Ship Mode
+        - column_id: Total Tax
+        axis_configs:
+        - x:
+          - Ship Mode
+          "y":
+          - Total Tax
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Ship Mode\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1586ec80-5c5c-4a0b-8491-7168b9404e01\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": false}},{\"id\": \"f6c3a1d1-2fd5-423e-b5a1-6de8f245ab76\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Ship Mode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Tax\",\"color\": \"#747E8C\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 35b5b2a0-09e4-4a2d-9664-d5c3235360c9
