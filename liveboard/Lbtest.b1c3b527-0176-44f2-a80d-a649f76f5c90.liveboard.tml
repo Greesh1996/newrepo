@@ -27,12 +27,13 @@ liveboard:
         - Lineorder Custkey
         - Lineorder Partkey
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Line Number\",\"columnProperty\": {}},{\"columnId\": \"Lineorder Custkey\",\"columnProperty\": {}},{\"columnId\": \"Lineorder Partkey\",\"columnProperty\": {}}]}"
       chart:
         type: SCATTER
         chart_columns:
-        - column_id: Line Number
         - column_id: Lineorder Custkey
         - column_id: Lineorder Partkey
+        - column_id: Line Number
         axis_configs:
         - x:
           - Lineorder Custkey
@@ -41,6 +42,7 @@ liveboard:
           color:
           - Line Number
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Lineorder Custkey\",\"columnProperty\": {}},{\"columnId\": \"Lineorder Partkey\",\"columnProperty\": {}},{\"columnId\": \"Line Number\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"77452dd9-088b-4514-9e24-aed53b7a24d3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Lineorder Partkey\"],\"isOpposite\": false}},{\"id\": \"608ed78d-0ea2-48bc-bbe2-b4f6de16bffe\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lineorder Custkey\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: a5a6e5a1-7a4e-4be1-ab7c-582aa6c6f8ed
   - id: Viz_2
@@ -52,8 +54,8 @@ liveboard:
         fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
       search_query: "[Line Number] [Lineorder Partkey]"
       answer_columns:
-      - name: Line Number
       - name: Lineorder Partkey
+      - name: Line Number
       table:
         table_columns:
         - column_id: Line Number
@@ -79,39 +81,9 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Line Number\",\"columnProperty\": {}},{\"columnId\": \"Lineorder Partkey\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e42bdab6-ebd9-44ff-a395-984656e4dddc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Lineorder Partkey\"],\"isOpposite\": false}},{\"id\": \"a63b5a36-3913-4c7a-b2ff-824760bed462\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Line Number\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: 5c24422f-af44-4123-933c-50beb754e44b
-  - id: Viz_3
-    answer:
-      name: "Line Number, Lineorder Partkey"
-      tables:
-      - id: Parameters WS
-        name: Parameters WS
-        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Line Number] [Lineorder Partkey]"
-      answer_columns:
-      - name: Line Number
-      - name: Lineorder Partkey
-      table:
-        table_columns:
-        - column_id: Line Number
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Lineorder Partkey
-          headline_aggregation: COUNT_DISTINCT
-        ordered_column_ids:
-        - Line Number
-        - Lineorder Partkey
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: SCATTER
-        chart_columns:
-        - column_id: Line Number
-        - column_id: Lineorder Partkey
-        axis_configs:
-        - x:
-          - Line Number
-          "y":
-          - Lineorder Partkey
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Line Number\",\"columnProperty\": {}},{\"columnId\": \"Lineorder Partkey\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e42bdab6-ebd9-44ff-a395-984656e4dddc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Lineorder Partkey\"],\"isOpposite\": false}},{\"id\": \"a63b5a36-3913-4c7a-b2ff-824760bed462\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Line Number\"]}}]}"
-      display_mode: TABLE_MODE
-    viz_guid: 7071b7cc-a528-47eb-9992-b9b4a3d92845
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
+    - visualization_id: Viz_2
+      size: LARGE
