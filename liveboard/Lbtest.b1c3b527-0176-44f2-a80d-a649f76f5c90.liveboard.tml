@@ -43,3 +43,39 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: a5a6e5a1-7a4e-4be1-ab7c-582aa6c6f8ed
+  - id: Viz_2
+    answer:
+      name: "Line Number, Lineorder Partkey"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Line Number] [Lineorder Partkey]"
+      answer_columns:
+      - name: Line Number
+      - name: Lineorder Partkey
+      table:
+        table_columns:
+        - column_id: Line Number
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lineorder Partkey
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Line Number
+        - Lineorder Partkey
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Line Number
+        - column_id: Lineorder Partkey
+        axis_configs:
+        - x:
+          - Line Number
+          "y":
+          - Lineorder Partkey
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Line Number\",\"columnProperty\": {}},{\"columnId\": \"Lineorder Partkey\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e42bdab6-ebd9-44ff-a395-984656e4dddc\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Lineorder Partkey\"],\"isOpposite\": false}},{\"id\": \"a63b5a36-3913-4c7a-b2ff-824760bed462\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Line Number\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 5c24422f-af44-4123-933c-50beb754e44b
