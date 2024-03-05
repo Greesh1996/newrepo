@@ -1,0 +1,38 @@
+guid: 25f1f84b-fdcb-4449-9232-563a6d0b1685
+liveboard:
+  name: lb1
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Color, Lineorder Partkey"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Color] [Lineorder Partkey]"
+      answer_columns:
+      - name: Color
+      - name: Lineorder Partkey
+      table:
+        table_columns:
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lineorder Partkey
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Color
+        - Lineorder Partkey
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Color
+        - column_id: Lineorder Partkey
+        axis_configs:
+        - x:
+          - Color
+          "y":
+          - Lineorder Partkey
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: 2979ac20-b914-455e-b186-dcbbb847e177
