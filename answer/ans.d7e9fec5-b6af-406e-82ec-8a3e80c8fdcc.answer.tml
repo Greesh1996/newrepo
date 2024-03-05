@@ -1,0 +1,42 @@
+guid: d7e9fec5-b6af-406e-82ec-8a3e80c8fdcc
+answer:
+  name: ans
+  tables:
+  - id: Formula Worksheet
+    name: Formula Worksheet
+    fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+  search_query: "[Tax] [Line Number] [Order Date] [Order Date].quarterly"
+  answer_columns:
+  - name: Total Tax
+  - name: Line Number
+  - name: Quarter(Order Date)
+  table:
+    table_columns:
+    - column_id: Line Number
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Quarter(Order Date)
+      headline_aggregation: MIN-MAX
+    - column_id: Total Tax
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Line Number
+    - Quarter(Order Date)
+    - Total Tax
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: Line Number
+    - column_id: Quarter(Order Date)
+    - column_id: Total Tax
+    axis_configs:
+    - x:
+      - Quarter(Order Date)
+      "y":
+      - Total Tax
+      color:
+      - Line Number
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Line Number\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Order Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Tax\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7287f6d0-3b43-4604-aaa7-e5f471cff63d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Tax\"],\"isOpposite\": false}},{\"id\": \"764c4606-7772-491b-a19a-67cf74b148d6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Quarter(Order Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"1\",\"color\": \"#2E75F0\"},{\"serieName\": \"2\",\"color\": \"#48D1E0\"},{\"serieName\": \"3\",\"color\": \"#FCC838\"},{\"serieName\": \"4\",\"color\": \"#06BF7F\"},{\"serieName\": \"5\",\"color\": \"#8C62F5\"},{\"serieName\": \"6\",\"color\": \"#FF8142\"},{\"serieName\": \"7\",\"color\": \"#ABC7F9\"}]}"
+  display_mode: CHART_MODE
