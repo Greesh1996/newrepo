@@ -1,0 +1,45 @@
+guid: b1c3b527-0176-44f2-a80d-a649f76f5c90
+liveboard:
+  name: Lbtest
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Line Number, Lineorder Custkey, Lineorder Partkey"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Line Number] [Lineorder Custkey] [Lineorder Partkey]"
+      answer_columns:
+      - name: Line Number
+      - name: Lineorder Custkey
+      - name: Lineorder Partkey
+      table:
+        table_columns:
+        - column_id: Line Number
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lineorder Custkey
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lineorder Partkey
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Line Number
+        - Lineorder Custkey
+        - Lineorder Partkey
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Line Number
+        - column_id: Lineorder Custkey
+        - column_id: Lineorder Partkey
+        axis_configs:
+        - x:
+          - Lineorder Custkey
+          "y":
+          - Lineorder Partkey
+          color:
+          - Line Number
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: a5a6e5a1-7a4e-4be1-ab7c-582aa6c6f8ed
