@@ -29,3 +29,37 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: f8bfdafa-a253-4d74-87b7-2f8a517717c5
+  - id: Viz_2
+    answer:
+      name: "Lo Shippriority, Lo Shipmode"
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: fb612ab8-4a9d-476a-8e24-a80f1d024ea2
+      search_query: "[Lo Shippriority] [Lo Shipmode]"
+      answer_columns:
+      - name: Lo Shippriority
+      - name: Lo Shipmode
+      table:
+        table_columns:
+        - column_id: Lo Shippriority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Lo Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Lo Shippriority
+        - Lo Shipmode
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Lo Shippriority
+        - column_id: Lo Shipmode
+        axis_configs:
+        - x:
+          - Lo Shippriority
+          "y":
+          - Lo Shipmode
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: e7ad39ad-11bd-4b8c-86fa-13ba92694e11
