@@ -78,3 +78,23 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: 96659db2-2dea-40a5-9889-7a3ba693714f
+  filters:
+  - column:
+    - Lo Orderdate
+    is_mandatory: false
+    date_filter:
+      type: YESTERDAY
+      oper: =
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 6
+    - visualization_id: Viz_2
+      x: 0
+      "y": 8
+      height: 8
+      width: 12
