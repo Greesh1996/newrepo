@@ -107,6 +107,20 @@ liveboard:
       height: 8
       width: 12
   views:
+  - view_guid: 89f31545-8f46-4d94-9148-236b2e636524
+    name: view2
+    view_filters:
+    - column:
+      - Lo Orderdate
+      date_filter:
+        type: TODAY
+        oper: =
+    - column:
+      - Lo Discount
+      oper: not in
+      values:
+      - "2"
+    is_public: false
   - view_guid: 7635c1e7-8927-4f24-8984-c693d36d2a94
     name: view1
     view_filters:
