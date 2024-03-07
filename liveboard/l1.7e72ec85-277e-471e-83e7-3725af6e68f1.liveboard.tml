@@ -1,3 +1,31 @@
 guid: 7e72ec85-277e-471e-83e7-3725af6e68f1
 liveboard:
   name: l1
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Lo Linenumber
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: fb612ab8-4a9d-476a-8e24-a80f1d024ea2
+      search_query: "[Lo Linenumber]"
+      answer_columns:
+      - name: Total Lo Linenumber
+      table:
+        table_columns:
+        - column_id: Total Lo Linenumber
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Linenumber
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Linenumber
+        axis_configs:
+        - "y":
+          - Total Lo Linenumber
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: f8bfdafa-a253-4d74-87b7-2f8a517717c5
