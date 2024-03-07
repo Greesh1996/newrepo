@@ -34,3 +34,37 @@ liveboard:
         client_state: ""
       display_mode: CHART_MODE
     viz_guid: 3fb445be-51aa-463f-861f-e7abb98d23bf
+  - id: Viz_2
+    answer:
+      name: "Category, Color"
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Category] [Color]"
+      answer_columns:
+      - name: Category
+      - name: Color
+      table:
+        table_columns:
+        - column_id: Category
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Color
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Category
+        - Color
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Category
+        - column_id: Color
+        axis_configs:
+        - x:
+          - Category
+          "y":
+          - Color
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: c000c56b-ee57-4e5f-9130-a1a4918aa0a3
