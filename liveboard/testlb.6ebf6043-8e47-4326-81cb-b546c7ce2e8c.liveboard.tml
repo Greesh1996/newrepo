@@ -19,6 +19,7 @@ liveboard:
         ordered_column_ids:
         - Color
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
@@ -27,42 +28,10 @@ liveboard:
         - "y":
           - Color
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b740f5eb-9307-4970-8232-cb640e83ac12\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Color\"],\"isOpposite\": false}},{\"id\": \"ac6df97b-9db9-4cfd-bd39-86f67f406e39\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: TABLE_MODE
     viz_guid: fdf736e9-d565-4b8f-8308-9e198a414f64
-  - id: Viz_2
-    answer:
-      name: Total Lo Discount
-      tables:
-      - id: UNIQUE-greeshma.us-UI-WS
-        name: UNIQUE-greeshma.us-UI-WS
-        fqn: 7e8cc0d6-54ea-4639-8e08-4f41897ebf7e
-      search_query: "[Lo Discount] [Lo Extendedprice] [Lo Linenumber]"
-      answer_columns:
-      - name: Total Lo Discount
-      - name: Total Lo Extendedprice
-      - name: Total Lo Linenumber
-      table:
-        table_columns:
-        - column_id: Total Lo Discount
-          headline_aggregation: SUM
-        - column_id: Total Lo Extendedprice
-          headline_aggregation: SUM
-        - column_id: Total Lo Linenumber
-          headline_aggregation: SUM
-        ordered_column_ids:
-        - Total Lo Discount
-        - Total Lo Extendedprice
-        - Total Lo Linenumber
-        client_state: ""
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Total Lo Discount
-        - column_id: Total Lo Extendedprice
-        - column_id: Total Lo Linenumber
-        axis_configs:
-        - "y":
-          - Total Lo Discount
-        client_state: ""
-      display_mode: CHART_MODE
-    viz_guid: 809a5fd9-0f8c-4510-895c-394ce89496e2
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
