@@ -1,0 +1,46 @@
+guid: f5eaf805-f2ec-4ba7-ac64-d14f455b7520
+liveboard:
+  name: lb2
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total Lo Suppkey, Total Lo Supplycost by Lo Shipmode"
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: 7e8cc0d6-54ea-4639-8e08-4f41897ebf7e
+      search_query: "[Lo Shipmode] [Lo Suppkey] [Lo Supplycost]"
+      answer_columns:
+      - name: Lo Shipmode
+      - name: Total Lo Suppkey
+      - name: Total Lo Supplycost
+      table:
+        table_columns:
+        - column_id: Lo Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Lo Suppkey
+          headline_aggregation: SUM
+        - column_id: Total Lo Supplycost
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Lo Shipmode
+        - Total Lo Suppkey
+        - Total Lo Supplycost
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Suppkey
+        - column_id: Total Lo Supplycost
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          "y":
+          - Total Lo Suppkey
+          - Total Lo Supplycost
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Suppkey\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Supplycost\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1bf0c715-7da2-434f-8eb6-042752860755\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Suppkey\"],\"isOpposite\": false}},{\"id\": \"e37c5e4d-97ea-42cc-b394-24cd5e79f28a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Supplycost\"],\"isOpposite\": true}},{\"id\": \"02a0c678-4f3f-4d01-af80-7b5b6a776cf5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Suppkey\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Lo Supplycost\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 2086b296-382a-40e1-872b-8ca53adddc98
