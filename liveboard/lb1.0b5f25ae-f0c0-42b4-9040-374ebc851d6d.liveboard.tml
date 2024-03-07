@@ -11,8 +11,8 @@ liveboard:
         fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
       search_query: "[Discount] [Order Total Price]"
       answer_columns:
-      - name: Total Discount
       - name: Total Order Total Price
+      - name: Total Discount
       table:
         table_columns:
         - column_id: Total Discount
@@ -23,48 +23,20 @@ liveboard:
         - Total Discount
         - Total Order Total Price
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}}]}"
       chart:
         type: KPI
         chart_columns:
-        - column_id: Total Discount
         - column_id: Total Order Total Price
+        - column_id: Total Discount
         axis_configs:
         - "y":
           - Total Discount
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2e85e8b2-5e71-4b60-8b23-84cac98c63c3\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"2c1f061e-b5c8-42f4-a5fd-d4e65914ca6d\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: 3fb445be-51aa-463f-861f-e7abb98d23bf
-  - id: Viz_2
-    answer:
-      name: "Category, Color"
-      tables:
-      - id: Parameters WS
-        name: Parameters WS
-        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Category] [Color]"
-      answer_columns:
-      - name: Category
-      - name: Color
-      table:
-        table_columns:
-        - column_id: Category
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Color
-          headline_aggregation: COUNT_DISTINCT
-        ordered_column_ids:
-        - Category
-        - Color
-        client_state: ""
-      chart:
-        type: SCATTER
-        chart_columns:
-        - column_id: Category
-        - column_id: Color
-        axis_configs:
-        - x:
-          - Category
-          "y":
-          - Color
-        client_state: ""
-      display_mode: TABLE_MODE
-    viz_guid: c000c56b-ee57-4e5f-9130-a1a4918aa0a3
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: EXTRA_SMALL
