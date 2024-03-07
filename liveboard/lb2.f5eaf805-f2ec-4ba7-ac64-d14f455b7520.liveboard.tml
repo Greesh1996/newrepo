@@ -86,6 +86,14 @@ liveboard:
       type: YESTERDAY
       oper: =
     display_name: ""
+  - column:
+    - Lo Discount
+    oper: in
+    values:
+    - "2"
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
   layout:
     tiles:
     - visualization_id: Viz_1
