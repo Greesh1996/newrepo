@@ -1,0 +1,65 @@
+guid: 1a237acf-f584-477b-83d4-a6479f828374
+liveboard:
+  name: lb1
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Lo Orderpriority, Day of week Lo Orderdate"
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: deb301da-6649-4f13-8498-2122667e6312
+      search_query: "[Lo Orderpriority] [Lo Orderdate].'day of week'"
+      answer_columns:
+      - name: Lo Orderpriority
+      - name: Day of Week(Lo Orderdate)
+      table:
+        table_columns:
+        - column_id: Lo Orderpriority
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Day of Week(Lo Orderdate)
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Lo Orderpriority
+        - Day of Week(Lo Orderdate)
+        client_state: ""
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Lo Orderpriority
+        - column_id: Day of Week(Lo Orderdate)
+        axis_configs:
+        - x:
+          - Day of Week(Lo Orderdate)
+          "y":
+          - Lo Orderpriority
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: ebdff451-b006-4994-bbd6-d45bca778b48
+  - id: Viz_2
+    answer:
+      name: Total Lo Discount
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: deb301da-6649-4f13-8498-2122667e6312
+      search_query: "[Lo Discount]"
+      answer_columns:
+      - name: Total Lo Discount
+      table:
+        table_columns:
+        - column_id: Total Lo Discount
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Discount
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Discount
+        axis_configs:
+        - "y":
+          - Total Lo Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 8273e342-9157-4222-bc3e-26f3844208d2
