@@ -1,0 +1,36 @@
+guid: 37e78bd0-95c1-4bf7-a665-3077f60fe8e5
+liveboard:
+  name: testLB
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Lo Custkey
+      tables:
+      - id: UNIQUE-greeshma.us-UI-WS
+        name: UNIQUE-greeshma.us-UI-WS
+        fqn: d1134eee-46b0-4109-8950-05564e566408
+      search_query: "[Lo Custkey] [Lo Discount]"
+      answer_columns:
+      - name: Total Lo Custkey
+      - name: Total Lo Discount
+      table:
+        table_columns:
+        - column_id: Total Lo Custkey
+          headline_aggregation: SUM
+        - column_id: Total Lo Discount
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Lo Custkey
+        - Total Lo Discount
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Lo Custkey
+        - column_id: Total Lo Discount
+        axis_configs:
+        - "y":
+          - Total Lo Custkey
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: f5c6945f-4b92-4e1e-a40c-c56bf398c299
