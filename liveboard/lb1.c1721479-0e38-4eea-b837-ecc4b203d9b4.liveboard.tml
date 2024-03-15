@@ -1,0 +1,36 @@
+guid: c1721479-0e38-4eea-b837-ecc4b203d9b4
+liveboard:
+  name: lb1
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Quantity
+      tables:
+      - id: Formula Worksheet
+        name: Formula Worksheet
+        fqn: 7d2fbbc1-d3bb-4ee4-9218-ec6421958c62
+      search_query: "[Quantity] [Order Total Price]"
+      answer_columns:
+      - name: Total Order Total Price
+      - name: Total Quantity
+      table:
+        table_columns:
+        - column_id: Total Order Total Price
+          headline_aggregation: SUM
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Total Quantity
+        - Total Order Total Price
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Total Quantity
+        - column_id: Total Order Total Price
+        axis_configs:
+        - "y":
+          - Total Quantity
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 9624ba7d-e591-4ccb-8a6b-522bd811ae2a
