@@ -90,6 +90,22 @@ liveboard:
       values:
       - 1-urgent
     is_public: false
+  - view_guid: 8fec6fa4-aec7-4fb6-81a2-1d80e3d5d094
+    name: view3
+    view_filters:
+    - column:
+      - Lo Shipmode
+      oper: in
+      values:
+      - fob
+      - mail
+      - air
+    - column:
+      - Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+    is_public: false
   - view_guid: 3c6a4cdf-2c58-471b-9733-3d9059374e1d
     name: view2
     view_filters:
