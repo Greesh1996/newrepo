@@ -1,0 +1,108 @@
+guid: 42b86c3a-fb38-4b76-ab1b-ea1ca06d9b9b
+liveboard:
+  name: lb1
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: "Total Lo Custkey, Total Lo Discount, Total Lo Extendedprice by Lo Shipmode"
+      tables:
+      - id: UNIQUE-48796-172.19.220.64-UI-WS
+        name: UNIQUE-48796-172.19.220.64-UI-WS
+        fqn: 4f1e6e39-ee46-4c42-8f27-ae1364ec13ee
+      search_query: "[Lo Custkey] [Lo Discount] [Lo Extendedprice] [Lo Shipmode]"
+      answer_columns:
+      - name: Lo Shipmode
+      - name: Total Lo Custkey
+      - name: Total Lo Discount
+      - name: Total Lo Extendedprice
+      table:
+        table_columns:
+        - column_id: Lo Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Lo Custkey
+          headline_aggregation: SUM
+        - column_id: Total Lo Discount
+          headline_aggregation: SUM
+        - column_id: Total Lo Extendedprice
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Lo Shipmode
+        - Total Lo Custkey
+        - Total Lo Discount
+        - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Custkey
+        - column_id: Total Lo Discount
+        - column_id: Total Lo Extendedprice
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          "y":
+          - Total Lo Custkey
+          - Total Lo Discount
+          - Total Lo Extendedprice
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Shipmode\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Extendedprice\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a507d2b0-1b65-4e50-805f-9da593ca66b5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": false}},{\"id\": \"7a6e59b5-8356-4720-ba21-b52f75252985\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": true}},{\"id\": \"5de8124f-f768-4e5c-b17d-cc3aab32de94\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Extendedprice\"],\"isOpposite\": true}},{\"id\": \"e40324bb-e1df-4adf-a0ff-02a2dd977c2c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Shipmode\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Custkey\",\"color\": \"#FCC838\"},{\"serieName\": \"Total Lo Discount\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Lo Extendedprice\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 15a9029a-7e74-4e8d-bf12-0ee60ce4e381
+  filters:
+  - column:
+    - Lo Shipmode
+    oper: in
+    values:
+    - fob
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  - column:
+    - Lo Orderpriority
+    oper: in
+    values:
+    - 1-urgent
+    is_mandatory: false
+    is_single_value: false
+    display_name: ""
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      x: 0
+      "y": 0
+      height: 8
+      width: 6
+  views:
+  - view_guid: f4c36f7c-badc-4d49-a964-03d17295211f
+    name: view1
+    view_filters:
+    - column:
+      - Lo Shipmode
+      oper: in
+      values:
+      - fob
+      - mail
+    - column:
+      - Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+    is_public: false
+  - view_guid: 3c6a4cdf-2c58-471b-9733-3d9059374e1d
+    name: view2
+    view_filters:
+    - column:
+      - Lo Shipmode
+      oper: in
+      values:
+      - fob
+      - mail
+    - column:
+      - Lo Orderpriority
+      oper: in
+      values:
+      - 1-urgent
+      - 2-high
+    is_public: false
