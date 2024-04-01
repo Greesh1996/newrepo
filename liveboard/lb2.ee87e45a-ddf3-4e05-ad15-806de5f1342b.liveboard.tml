@@ -76,3 +76,28 @@ liveboard:
         client_state: ""
       display_mode: TABLE_MODE
     viz_guid: 2c375c2f-4ffd-492a-9f44-c61f7f8fdd9f
+  - id: Viz_3
+    answer:
+      name: Line Number
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Line Number]"
+      answer_columns:
+      - name: Line Number
+      table:
+        table_columns:
+        - column_id: Line Number
+          headline_aggregation: COUNT_DISTINCT
+        client_state: ""
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Line Number
+        axis_configs:
+        - "y":
+          - Line Number
+        client_state: ""
+      display_mode: TABLE_MODE
+    viz_guid: e0ace16d-9133-464a-a189-957a0b50e939
