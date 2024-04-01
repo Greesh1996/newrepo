@@ -23,6 +23,7 @@ liveboard:
         - column_id: Container
           headline_aggregation: COUNT_DISTINCT
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Container\",\"columnProperty\": {}}]}"
       chart:
         type: SCATTER
         chart_columns:
@@ -37,6 +38,7 @@ liveboard:
           color:
           - Category
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Category\",\"columnProperty\": {}},{\"columnId\": \"Container\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"58590bfa-3ef8-4450-8be2-a86479c8a374\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Color\"],\"isOpposite\": false}},{\"id\": \"e3788c55-8c4a-4b7f-9b72-3590a2277d3f\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Container\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: f8a592a4-7f0b-4f5e-968a-913929b4e601
   - id: Viz_2
@@ -60,6 +62,7 @@ liveboard:
         - column_id: Line Number
           headline_aggregation: COUNT_DISTINCT
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Email Domain\",\"columnProperty\": {}},{\"columnId\": \"Email Domain Masked Color\",\"columnProperty\": {}},{\"columnId\": \"Line Number\",\"columnProperty\": {}}]}"
       chart:
         type: SCATTER
         chart_columns:
@@ -74,30 +77,12 @@ liveboard:
           color:
           - Line Number
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Email Domain Masked Color\",\"columnProperty\": {}},{\"columnId\": \"Line Number\",\"columnProperty\": {}},{\"columnId\": \"Email Domain\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2c7ac21c-3845-4f0c-8e72-be0c7a715a3d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Email Domain Masked Color\"],\"isOpposite\": false}},{\"id\": \"8e9ee1da-3e87-4763-aa57-dc9c234e8928\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Email Domain\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: 2c375c2f-4ffd-492a-9f44-c61f7f8fdd9f
-  - id: Viz_3
-    answer:
-      name: Line Number
-      tables:
-      - id: Parameters WS
-        name: Parameters WS
-        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Line Number]"
-      answer_columns:
-      - name: Line Number
-      table:
-        table_columns:
-        - column_id: Line Number
-          headline_aggregation: COUNT_DISTINCT
-        client_state: ""
-      chart:
-        type: KPI
-        chart_columns:
-        - column_id: Line Number
-        axis_configs:
-        - "y":
-          - Line Number
-        client_state: ""
-      display_mode: TABLE_MODE
-    viz_guid: e0ace16d-9133-464a-a189-957a0b50e939
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
+    - visualization_id: Viz_2
+      size: LARGE
